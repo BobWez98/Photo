@@ -54,7 +54,7 @@ session_start();
 
                     <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
                         <li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li><li class="nav-item"><a class="nav-link link" href="#gallery3-b">GALLERIJ</a></li>
-                        <li class="nav-item"><a class="nav-link link" href="about.php">OVER</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="#over">OVER</a></li>
                       <?php if(!$_SESSION['Ingelogd']){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='Login.php'>LOGIN</a></li>";  } ?>
                      <?php if(!$_SESSION['Ingelogd']){  echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='register.php'>REGISTREREN</a></li>"; }?>
                      <?php if($_SESSION['Ingelogd'] == true){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='logout.php'>UITLOGGEN</a></li>"; } ?>
@@ -142,7 +142,7 @@ session_start();
 </section>
 
     <!-- HIER HET STUKJE 'OVER'-->
-    <section>
+    <section id="over">
         <div class="container-fluid text-md-center">
             
                 
@@ -174,6 +174,8 @@ session_start();
         </div>
 </section>
     <br />
+    <!-- HIER EINDIGT HET STUKJE 'OVER'-->
+    
 <section class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel" id="gallery3-b" data-filter="true" style="background-color: rgb(243, 198, 73); padding-top: 6rem; padding-bottom: 3rem;">
     <!-- Filter -->
     <div class="mbr-gallery-filter container gallery-filter-active gallery-filter__bg">
