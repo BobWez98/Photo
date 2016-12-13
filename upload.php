@@ -44,5 +44,5 @@ if ($uploadOk == 0) {
     }
 }
 
-//header('Location: adminPaneel.php');
+header('Location: adminPaneel.php');
 ?>
