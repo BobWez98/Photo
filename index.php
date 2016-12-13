@@ -27,7 +27,7 @@ session_start();
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
+    
   
   
 </head>
@@ -177,31 +177,47 @@ session_start();
     <!-- HIER EINDIGT HET STUKJE 'OVER'-->
     <!-- HIER START DE GALLERIJ --> 
     
-    <div class="gallery">
+    <div class="gallery" >
     
         <div class="container">
 
         <div class="row">
-            
-        <?php 
-
-            $dir = "assets/images/\"$keuze\"";
-            $exclude1 = array( ".","..","error_log","_notes" );
-            if (is_dir($dir)){ 
-            $images = scandir($dir);
-                foreach $images as $image {
-                    // ben hier bezig maar moet nu even stoppen
-                }
-                
-            }
-            
             <div class="col-lg-12">
                 <h1 class="page-header">Thumbnail Gallery</h1>
             </div>
+            
+        <?php 
+            // Ben een heel eind gekomen met de gallerij, moet alleen nog even kijken of ik wat minder whitespace ertussen kan krijgen en de eerste 2 afbeeldingen kan fixen.
+            
+            $keuze = "Huwelijken";
+            $dir = "assets/images/portretten/";
+            $exclude = array( ".","..","error_log","_notes" );
+            
+            if (is_dir($dir)) {
+            $files = scandir($dir);
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </div>
+
+            foreach($files as $file){
+            if(!in_array($files,$exclude)){
+                    echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <img  style="width:100%;" class="img-responsive" src="'.$dir.$file.'">
+                        </div>'; 
+                } 
+                
+            } 
+            
+            
+           
+
+
+            
+            }
+            
+
+            
+            
+
+            
         
             ?>
         </div>
