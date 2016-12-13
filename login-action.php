@@ -25,7 +25,7 @@ if(!mysqli_fetch_assoc($result)){
     $_SESSION['Voornaam'] = $row['Voornaam'];
     $_SESSION['Ingelogd'] = true;
 
-    header('Location: index.php');
+    header('Location: adminPaneel.php');
 }
 
 

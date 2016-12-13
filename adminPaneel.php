@@ -5,11 +5,55 @@
  * Date: 13-12-2016
  * Time: 09:21
  */
+session_start();
 ?>
 <html>
 
 <head>
+    <div class="modal-header">
+        <div class="row">
+            <div class="col-md-12">
 
+    <section id="menu-i">
+        <!-- navigatie start -->
+        <nav class="navbar navbar-dropdown navbar-fixed-top">
+            <div class="container">
+
+                <div class="mbr-table">
+                    <div class="mbr-table-cell">
+
+                        <div class="navbar-brand">
+                            <a href="index.php" class="mbri-camera mbr-iconfont mbr-iconfont-menu navbar-logo"></a>
+                            <a class="navbar-caption" href="index.php">Mambo Fotografie</a>
+                        </div>
+
+                    </div>
+                    <div class="mbr-table-cell">
+
+                        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                            <div class="hamburger-icon"></div>
+                        </button>
+
+                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                            <li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li><li class="nav-item"><a class="nav-link link" href="#gallery3-b">GALLERIJ</a></li>
+                            <li class="nav-item"><a class="nav-link link" href="#over">OVER</a></li>
+                            <?php if(!ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='Login.php'>LOGIN</a></li>";}  ?>
+                            <?php if(ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='logout.php'>UITLOGGEN</a></li>"; } ?>
+                        </ul>
+                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                            <div class="close-icon"></div>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </section>
+            </div>
+        </div>
+    </div>
     <!-- Site made with Mobirise Website Builder v3.9.2, https://mobirise.com -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,54 +79,32 @@
 
 
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
 
-<section id="menu-i">
-    <!-- navigatie start -->
-    <nav class="navbar navbar-dropdown navbar-fixed-top">
-        <div class="container">
 
-            <div class="mbr-table">
-                <div class="mbr-table-cell">
+            <section id="Upload">
 
-                    <div class="navbar-brand">
-                        <a href="index.php" class="mbri-camera mbr-iconfont mbr-iconfont-menu navbar-logo"></a>
-                        <a class="navbar-caption" href="index.php">Mambo Fotografie</a>
-                    </div>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Select image to upload:
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload Image" name="submit">
+                </form>
 
-                </div>
-                <div class="mbr-table-cell">
+            </section>
 
-                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                        <div class="hamburger-icon"></div>
-                    </button>
-
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-                        <li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li><li class="nav-item"><a class="nav-link link" href="#gallery3-b">GALLERIJ</a></li>
-                        <li class="nav-item"><a class="nav-link link" href="#over">OVER</a></li>
-                        <?php if(!$_SESSION['Ingelogd']){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='Login.php'>LOGIN</a></li>";  } ?>
-                        <?php if(ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='logout.php'>UITLOGGEN</a></li>"; } ?>
-                    </ul>
-                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                        <div class="close-icon"></div>
-                    </button>
-
-                </div>
-            </div>
 
         </div>
-    </nav>
-
-</section>
-
-<!-- eind navigatie -->
-
-
-
-
-
-
-
+    </div>
+</div>
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
 <script src="assets/tether/tether.min.js"></script>
