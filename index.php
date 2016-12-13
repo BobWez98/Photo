@@ -71,7 +71,8 @@ session_start();
 </section>
      
 <!-- eind navigatie -->
-<section class="engine"><a rel="external" href="https://mobirise.com">easy responsive web site building software</a></section><section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding mbr-after-navbar" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="5000" id="slider3-h" style="background-color: rgb(239, 239, 239);">
+
+<section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding mbr-after-navbar" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="5000" id="slider3-h" style="background-color: rgb(239, 239, 239);">
     <div class=" container boxed-slider" style="padding-top: 160px; padding-bottom: 120px;">
         <div>
             <div>
@@ -191,37 +192,7 @@ session_start();
         <div class=" mbr-gallery-layout-default">
             <div>
                 <div>
-                    <!--<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p2" data-tags="Awesome" data-video-url="false">
-                        <div href="#lb-gallery3-b" data-slide-to="0" data-toggle="modal">
-                            
-                            
-
-                            <img alt="" src="assets/images/bike-small.jpg">
-                            
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p2" data-tags="Responsive" data-video-url="false">
-                        <div href="#lb-gallery3-b" data-slide-to="1" data-toggle="modal">
-                            
-                            
-
-                            <img alt="" src="assets/images/code-man-small.jpg">
-                            
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div><div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p2" data-tags="Creative" data-video-url="false">
-                        <div href="#lb-gallery3-b" data-slide-to="2" data-toggle="modal">
-                            
-                            
-
-                            <img alt="" src="assets/images/coworkers-small.jpg">
-                            
-                            <span class="icon-focus"></span>
-                            <span class="mbr-gallery-title">Type caption here</span>
-                        </div>
-                    </div>-->
+                    
 
                     <!--PORTRETTEN FOTO's-->
                     <div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p2" data-tags="Huwelijken" data-video-url="false">
@@ -304,25 +275,8 @@ session_start();
                         <li data-app-prevent-settings="" data-target="#lb-gallery3-b" class=" active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="2"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="3"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="4"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="5"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="6"></li><li data-app-prevent-settings="" data-target="#lb-gallery3-b" data-slide-to="7"></li>
                     </ol>
                     <div class="carousel-inner">
-<!--                        <div class="carousel-item active">
-                            <img alt="" src="assets/images/bike.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/code-man.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/coworkers.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/desktop.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/room-laptop.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/table.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/windows-books.jpg">
-                        </div><div class="carousel-item">
-                            <img alt="" src="assets/images/working-area.jpg">
-                        </div>-->
+                        
                         <?php
-
                         $dir = "assets/images/";
                         $exclude = array( ".","..","error_log","_notes" );
                         if (is_dir($dir)) {
