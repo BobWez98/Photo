@@ -182,7 +182,19 @@ session_start();
         <div class="container">
 
         <div class="row">
+            
+        <?php 
 
+            $dir = "assets/images/\"$keuze\"";
+            $exclude1 = array( ".","..","error_log","_notes" );
+            if (is_dir($dir)){ 
+            $images = scandir($dir);
+                foreach $images as $image {
+                    // ben hier bezig maar moet nu even stoppen
+                }
+                
+            }
+            
             <div class="col-lg-12">
                 <h1 class="page-header">Thumbnail Gallery</h1>
             </div>
@@ -190,11 +202,11 @@ session_start();
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="">
             </div>
-            
+        
+            ?>
         </div>
-            
     </div>
-    
+     <!-- EINDE GALLERIJ --> 
      <!-- TARIEVEN -->
     <section id="tarieven">
            <div class="jumbotron">
