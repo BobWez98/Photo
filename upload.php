@@ -1,6 +1,7 @@
 <?php
 
-$target_dir =  $_POST['dir']."/";
+$target_dir =  "assets/images/".$_POST['dir']."/";
+echo $target_dir;
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -43,5 +44,5 @@ if ($uploadOk == 0) {
     }
 }
 
-header('Location: adminPaneel.php');
+//header('Location: adminPaneel.php');
 ?>
