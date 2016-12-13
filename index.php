@@ -175,8 +175,25 @@ session_start();
 </section>
     <br />
     <!-- HIER EINDIGT HET STUKJE 'OVER'-->
+    <!-- HIER START DE GALLERIJ --> 
     
+    <div class="gallery">
+    
+        <div class="container">
 
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Thumbnail Gallery</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+            </div>
+            
+        </div>
+            
+    </div>
     
      <!-- TARIEVEN -->
     <section id="tarieven">
@@ -261,7 +278,7 @@ session_start();
     
     <div class="container">
         <div class="row">
-            <p class="text-xs-center">Copyright (c) 2016 Mambo Fotografie</p>
+            <p class="text-xs-center">Copyright (c) 2016 BMMMT design</p>
         </div>
     </div>
 </footer>
