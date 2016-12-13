@@ -6,7 +6,7 @@
  * Time: 15:17
  */
 
-$conn = mysqli_connect("localhost","root","usbw","mambo");
+$conn = new mysqli("localhost","root","","mambo_db");
 
 
 

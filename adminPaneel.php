@@ -93,10 +93,24 @@ session_start();
 
             <section id="Upload">
 
-                <form action="upload.php" method="post" enctype="multipart/form-data">
+                <form class="form-group" action="upload.php" method="post" enctype="multipart/form-data">
+                    <div class="form-control">
                     Select image to upload:
                         <input type="file" name="fileToUpload" id="fileToUpload">
+                    </div>
+
+                            <div class="form-control">
+                        <label for="sel1">Selecteer onderwerp:</label>
+                        <select class="form-control" name="dir" id="onderwerpen">
+                            <option>portretten</option>
+                            <option>huwelijken</option>
+                            <option>natuur</option>
+
+                        </select>
+                    </div>
+                    <div class="form-control">
                         <input type="submit" value="Upload Image" name="submit">
+                    </div>
                 </form>
 
             </section>
