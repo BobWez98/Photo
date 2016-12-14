@@ -18,8 +18,8 @@ include("./includes/header.php");
             <br>
             <br>
 
-<div class="container-fluid">
-    <div class="row">
+<div class="container">
+  <!--  <div class="row">
 
         <div class="col-md-10"
 
@@ -71,7 +71,7 @@ include("./includes/header.php");
                     <input type="submit" value="Inhoud weergeven" name="submit">
                 </div>
                 <?php
-
+/*
                 if(ISSET($_POST['dir'])){
                     $dir = $_POST['dir'];
 
@@ -83,11 +83,37 @@ include("./includes/header.php");
                     echo"</ul>";
                 }
 
-                ?>
+                */?>
 
             </form>
 
+    </div>-->
+
+    <div class="row">
+        <form class="form-group" method="POST" action="upload.php">
+        <div class="col-md-12" style="display: block;">
+            <div class="form-group" style="position: static;">
+                <label for="onderwerpen">Select</label>
+                <select class="form-control" name="dir" id="onderwerpen">
+                    <option>portretten</option>
+                    <option>huwelijken</option>
+                    <option>natuur</option>
+                </select>
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+
+            <div class="form-group" style="position: static;">
+                <label for="fileToUpload">File input</label>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="form-group" style="padding-right: 20px; position: static;">
+
+                <input class="btn btn-success form-control" type="submit" value="Upload Image" name="submit">
+            </div>
+        </div>
     </div>
+
 </div>
 
 
