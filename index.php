@@ -200,7 +200,7 @@ session_start();
             foreach($files as $file){
             if(!in_array($files,$exclude)){
                     echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                            <img  style="width:100%;" class="img-responsive" src="'.$dir.$file.'">
+                            <img  style="width:100%; " class="img-responsive" src="'.$dir.$file.'">
                         </div>'; 
                 } 
                 
