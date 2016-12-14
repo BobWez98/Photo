@@ -18,78 +18,8 @@ include("./includes/header.php");
             <br>
             <br>
 
-<div class="container">
-  <!--  <div class="row">
 
-        <div class="col-md-10"
-
-                <form class="form-group" action="upload.php" method="post">
-                    <div class="col-md-6">
-                    <div class="form-control">
-                        <label class="form-control-label">Uploaden van afbeeldingen:</label>
-                        <label class="form-control-label" for="fileToUpload">Selecteer een foto:</label>
-                        <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
-                    </div>
-                    </div>
-
-                            <div class="form-control">
-                        <label class="form-control-label" for="onderwerpen">Selecteer onderwerp:</label>
-                        <select class="form-control" name="dir" id="onderwerpen">
-                            <option>portretten</option>
-                            <option>huwelijken</option>
-                            <option>natuur</option>
-
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <input class="btn btn-success form-control" type="submit" value="Upload Image" name="submit">
-                    </div>
-                </form>
-
-
-
-
-
-
-
-            <form class="form-horizontal" method="POST" action="adminPaneel.php">
-                <div class="form-control">
-                    <h1 class="form-control">Verwijderen van:</h1>
-                </div>
-                <div class="form-control">
-                    <label for="sel2" class="form-control">
-                    Selecteer map:
-                    </label>
-                    <select class="form-control" name="dir" id="dir">
-                        <option>portretten</option>
-                        <option>huwelijken</option>
-                        <option>natuur</option>
-                    </select>
-
-                </div>
-                <div class="form-control">
-                    <input type="submit" value="Inhoud weergeven" name="submit">
-                </div>
-                <?php
-/*
-                if(ISSET($_POST['dir'])){
-                    $dir = $_POST['dir'];
-
-                    $dirList = scandir("assets/images/".$dir);
-                    echo"<ul>";
-                    foreach ($dirList as $item){
-                        echo"<li>". $item ."</li>";
-                    }
-                    echo"</ul>";
-                }
-
-                */?>
-
-            </form>
-
-    </div>-->
-
-    <div class="row">
+  <div class="row">
         <form class="form-group" method="POST" action="upload.php">
         <div class="col-md-12" style="display: block;">
             <div class="form-group" style="position: static;">
@@ -103,13 +33,13 @@ include("./includes/header.php");
             </div>
 
             <div class="form-group" style="position: static;">
-                <label for="fileToUpload">File input</label>
-                <input type="file" name="fileToUpload" id="fileToUpload">
+                <label class="form-control-label" for="fileToUpload">Selecteer een foto:</label>
+                <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
                 <p class="help-block">Example block-level help text here.</p>
             </div>
             <div class="form-group" style="padding-right: 20px; position: static;">
 
-                <input class="btn btn-success form-control" type="submit" value="Upload Image" name="submit">
+                <input class="form-control" type="submit" value="Upload Image" name="submit">
             </div>
         </div>
     </div>
