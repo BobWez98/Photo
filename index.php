@@ -1,4 +1,4 @@
-
+<?php  include("./includes/header.php");   ?>
 <!-- eind navigatie -->
 
 <section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding mbr-after-navbar" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="5000" id="slider3-h" style="background-color: rgb(239, 239, 239);">
