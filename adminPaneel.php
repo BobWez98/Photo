@@ -6,101 +6,34 @@
  * Time: 09:21
  */
 session_start();
+include("./includes/header.php");
 ?>
-<html>
 
-<head>
-    <div class="modal-header">
-        <div class="row">
-            <div class="col-md-12">
-
-    <section id="menu-i">
-        <!-- navigatie start -->
-        <nav class="navbar navbar-dropdown navbar-fixed-top">
-            <div class="container">
-
-                <div class="mbr-table">
-                    <div class="mbr-table-cell">
-
-                        <div class="navbar-brand">
-                            <a href="index.php" class="mbri-camera mbr-iconfont mbr-iconfont-menu navbar-logo"></a>
-                            <a class="navbar-caption" href="index.php">Mambo Fotografie</a>
-                        </div>
-
-                    </div>
-                    <div class="mbr-table-cell">
-
-                        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                            <div class="hamburger-icon"></div>
-                        </button>
-
-                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-                            <li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li><li class="nav-item"><a class="nav-link link" href="#gallery3-b">GALLERIJ</a></li>
-                            <li class="nav-item"><a class="nav-link link" href="#over">OVER</a></li>
-                            <?php if(!ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='Login.php'>LOGIN</a></li>";}  ?>
-                            <?php if(ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='logout.php'>UITLOGGEN</a></li>"; } ?>
-                        </ul>
-                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                            <div class="close-icon"></div>
-                        </button>
-
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-
-    </section>
-            </div>
-        </div>
-    </div>
-    <!-- Site made with Mobirise Website Builder v3.9.2, https://mobirise.com -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v3.9.2, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <meta name="description" content="">
-    <title>Admin</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
-    <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-</head>
 
 
 <body>
-<div class="container">
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
+        <div class="col-md-10"
 
-
-            <section id="Upload">
-
-                <form class="form-group" action="upload.php" method="post" enctype="multipart/form-data">
+                <form class="form-group" action="upload.php" method="post">
+                    <div class="col-md-6">
                     <div class="form-control">
-                    Select image to upload:
-                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <label class="form-control-label">Uploaden van afbeeldingen:</label>
+                        <label class="form-control-label" for="fileToUpload">Selecteer een foto:</label>
+                        <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                    </div>
                     </div>
 
                             <div class="form-control">
-                        <label for="sel1">Selecteer onderwerp:</label>
+                        <label class="form-control-label" for="onderwerpen">Selecteer onderwerp:</label>
                         <select class="form-control" name="dir" id="onderwerpen">
                             <option>portretten</option>
                             <option>huwelijken</option>
@@ -109,16 +42,54 @@ session_start();
                         </select>
                     </div>
                     <div class="form-control">
-                        <input type="submit" value="Upload Image" name="submit">
+                        <input class="btn btn-success form-control" type="submit" value="Upload Image" name="submit">
                     </div>
                 </form>
 
-            </section>
 
 
-        </div>
+
+
+
+
+            <form class="form-horizontal" method="POST" action="adminPaneel.php">
+                <div class="form-control">
+                    <h1 class="form-control">Verwijderen van:</h1>
+                </div>
+                <div class="form-control">
+                    <label for="sel2" class="form-control">
+                    Selecteer map:
+                    </label>
+                    <select class="form-control" name="dir" id="dir">
+                        <option>portretten</option>
+                        <option>huwelijken</option>
+                        <option>natuur</option>
+                    </select>
+
+                </div>
+                <div class="form-control">
+                    <input type="submit" value="Inhoud weergeven" name="submit">
+                </div>
+                <?php
+
+                if(ISSET($_POST['dir'])){
+                    $dir = $_POST['dir'];
+
+                    $dirList = scandir("assets/images/".$dir);
+                    echo"<ul>";
+                    foreach ($dirList as $item){
+                        echo"<li>". $item ."</li>";
+                    }
+                    echo"</ul>";
+                }
+
+                ?>
+
+            </form>
+
     </div>
 </div>
+
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
 <script src="assets/tether/tether.min.js"></script>
