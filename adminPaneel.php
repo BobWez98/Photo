@@ -39,9 +39,48 @@ include("./includes/header.php");
             </div>
         </div>
     </div>
+     </form>
+
+         <form class="form-group" method="POST" action="adminPaneel.php">
+             <div class="col-md-6 col-md-offset-3">
+             <label for="onderwerpen">Selecteer</label>
+             <select class="form-control" name="dir" id="onderwerpen">
+                 <option>portretten</option>
+                 <option>huwelijken</option>
+                 <option>natuur</option>
+             </select>
+                 <input class="form-group" type="submit" value="Inhoud map">
+         </form>
+      <form method="POST" action="fotoVerwijderen.php">
+                 <ul>
+                 <?php
+
+                 if(ISSET($_POST['dir'])){
+                    $_SESSION['dir'] = $_POST['dir'];
+
+                     $dir = scandir("assets/images/".$_POST['dir']);
+
+                     foreach ($dir as $item){
+
+                         echo "<li class='list-group-item'><input class='form-group' name='verwijderen' value='$item' type='checkbox'>".$item."</li>";
+
+                     }
+
+
+
+
+                 }
+
+
+                 ?>
+                    </ul>
+          <input class="form-group" type="submit" value="Verwijder Foto">
+      </form>
+
+     </div>
  </div>
-</div>
-</div>
+
+
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
 <script src="assets/tether/tether.min.js"></script>
