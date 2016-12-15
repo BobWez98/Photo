@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Bob
+ * User: BobFagit
  * Date: 13-12-2016
  * Time: 09:21
  */
@@ -12,30 +12,26 @@ include("./includes/header.php");
 
 
 <body>
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-  <div class="row">
-        <form class="form-group" method="POST" action="upload.php">
-        <div class="col-md-12" style="display: block;">
+<div class="container">
+  <div class="row" style="padding-top:90px;">
+     <form class="form-group" method="POST" action="upload.php">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>Upload een foto!</h1>
+         <div class="well">
             <div class="form-group" style="position: static;">
-                <label for="onderwerpen">Select</label>
+                <label for="onderwerpen">Selecteer</label>
                 <select class="form-control" name="dir" id="onderwerpen">
                     <option>portretten</option>
                     <option>huwelijken</option>
                     <option>natuur</option>
                 </select>
-                <p class="help-block">Example block-level help text here.</p>
+                <p class="help-block">Selecteer hier de categorie waar de foto bij hoort.</p>
             </div>
 
             <div class="form-group" style="position: static;">
                 <label class="form-control-label" for="fileToUpload">Selecteer een foto:</label>
                 <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
-                <p class="help-block">Example block-level help text here.</p>
+                <p class="help-block">Selecteer hier de foto die u wilt uploaden.</p>
             </div>
             <div class="form-group" style="padding-right: 20px; position: static;">
 
@@ -43,9 +39,9 @@ include("./includes/header.php");
             </div>
         </div>
     </div>
-
+ </div>
 </div>
-
+</div>
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
 <script src="assets/tether/tether.min.js"></script>
