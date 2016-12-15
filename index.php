@@ -159,6 +159,8 @@
                 </div>
         </div>
     </div>
+            <br />
+            <br />
         
      <!-- EINDE GALLERIJ --> 
      <!-- TARIEVEN -->
@@ -168,7 +170,7 @@
                 <h1 style="font-size: 60px"> TARIEVEN </h1> <br />
                 <div>
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
+                    <ul class="nav nav-tabs" role="tablist" style="font-size: 15px">
                         <li role="presentation" class="active"><a href="#Trouwreportages" aria-controls="home" role="tab" data-toggle="tab">Trouwreportages</a></li>
                         <li role="presentation"><a href="#Portretfotografie" aria-controls="profile" role="tab" data-toggle="tab">Portretfotografie</a></li>
                         <li role="presentation"><a href="#Familie" aria-controls="messages" role="tab" data-toggle="tab">Familie & gezin</a></li>
@@ -180,31 +182,31 @@
             
             <br /> <br />
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane" id="Trouwreportages">
+                                <div role="tabpanel" class="tab-pane" id="Trouwreportages" style="25 px">
                                     <h3>Trouwreportages</h3>
                                     <p>Informeer vrijblijvend naar onze voordelige tarieven voor het
                                     maken van een trouwreportage.<br /> Wij geven jullie graag advies over de
                                     diverse mogelijkheden.</p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Portretfotografie">
-                                    <h3>Portretfotografie</h3>
+                                <div role="tabpanel" class="tab-pane" id="Portretfotografie" style="25 px">
+                                    <h3 style="font-size: 25px;">Portretfotografie</h3>
                                     <p>In de studio of op locatie 1-5 personen: <br />
                                     Met 1-5 personen € 75,- ca 1 uur fotografie,
                                     minimaal 5 nabewerkte foto’s (groeps- en singlefoto’s) in hoge
                                     resolutie.</p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Familie">
-                                    <h3>Familie en Gezin</h3>
+                                <div role="tabpanel" class="tab-pane" id="Familie" style="25 px">
+                                    <h3 style="font-size: 25px;">Familie en Gezin</h3>
                                     Ouders, kinderen en opa & oma € 85,- ca 1 uur fotografie,
                                     minimaal 5 nabewerkte foto’s (groeps- en singlefoto’s) in hoge resolutie.
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Zwanger">
-                                    <h3>Zwangerschapsshoots</h3>
+                                <div role="tabpanel" class="tab-pane" id="Zwanger" style="25 px">
+                                    <h3 style="font-size: 25px;">Zwangerschapsshoots</h3>
                                     <p>€ 85,- per uur het aantal foto's is afhankelijk van de duur van de shoot,
                                         met een minimum van 5 nabewerkte foto's in hoge resolutie.</p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Bedrijfsportretten">
-                                    <h3>Bedrijfsportretten</h3>
+                                <div role="tabpanel" class="tab-pane" id="Bedrijfsportretten" style="25 px">
+                                    <h3 style="font-size: 25px;">Bedrijfsportretten</h3>
                                     <p>Bedrijfsportretten op locatie vanaf € 75,-.
                                         Een portret van al uw medewerkers (bijv. voor in uw brochure of op uw website)
                                         tot 10 medewerkers voor € 225,-. <br />
@@ -213,7 +215,7 @@
 
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="Let_op">
-                                    <h3>Let op!</h3>
+                                    <h3 style="font-size: 25px">Let op!</h3>
                                     <p>Alle genoemde bedragen zijn exclusief 21% BTW.
 
                                         Afdrukken van foto’s De foto’s kunnen, tegen meerprijs en in verschillende formaten, via de website van Mambofotografie worden besteld.<br />
@@ -244,7 +246,7 @@
     
     <div class="container">
         <div class="row">
-            <p class="text-xs-center">Copyright (c) 2016 BMMMT design</p>
+            <p class="text-xs-center">Copyright (c) 2016 MMMTB design</p>
         </div>
     </div>
 </footer>
@@ -268,5 +270,7 @@
 
   
   <input name="animation" type="hidden">
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>

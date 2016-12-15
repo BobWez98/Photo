@@ -59,7 +59,11 @@ session_start();
                         <li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li>
                         <li class="nav-item"><a class="nav-link link" href="#gallery3-b">GALLERIJ</a></li>
                         <li class="nav-item"><a class="nav-link link" href="#over">OVER</a></li>
+<<<<<<< HEAD
                         <li class="nav-item"><a class="nav-link link" href="#contactformulier">Contactformulier</a></li>
+=======
+                        <li class="nav-item"><a class="nav-link link" href="#tarieven">TARIEVEN</a></li>
+>>>>>>> 76a145b900fa7417139e48da34637a10f61572f2
                       <?php if(!ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='Login.php'>LOGIN</a></li>";  } ?>
                      <?php if(ISSET($_SESSION['Ingelogd'])){ echo"<li class='nav-item nav-btn'><a class='nav-link btn btn-white btn-white-outline' href='logout.php'>UITLOGGEN</a></li>"; } ?>
                     </ul>
