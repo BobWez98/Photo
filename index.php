@@ -182,30 +182,30 @@
             
             <br /> <br />
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane" id="Trouwreportages">
+                                <div role="tabpanel" class="tab-pane" id="Trouwreportages" style="25 px">
                                     <h3>Trouwreportages</h3>
                                     <p>Informeer vrijblijvend naar onze voordelige tarieven voor het
                                     maken van een trouwreportage.<br /> Wij geven jullie graag advies over de
                                     diverse mogelijkheden.</p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Portretfotografie">
+                                <div role="tabpanel" class="tab-pane" id="Portretfotografie" style="25 px">
                                     <h3 style="font-size: 25px;">Portretfotografie</h3>
                                     <p>In de studio of op locatie 1-5 personen: <br />
                                     Met 1-5 personen € 75,- ca 1 uur fotografie,
                                     minimaal 5 nabewerkte foto’s (groeps- en singlefoto’s) in hoge
                                     resolutie.</p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Familie">
+                                <div role="tabpanel" class="tab-pane" id="Familie" style="25 px">
                                     <h3 style="font-size: 25px;">Familie en Gezin</h3>
                                     Ouders, kinderen en opa & oma € 85,- ca 1 uur fotografie,
                                     minimaal 5 nabewerkte foto’s (groeps- en singlefoto’s) in hoge resolutie.
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Zwanger">
+                                <div role="tabpanel" class="tab-pane" id="Zwanger" style="25 px">
                                     <h3 style="font-size: 25px;">Zwangerschapsshoots</h3>
                                     <p>€ 85,- per uur het aantal foto's is afhankelijk van de duur van de shoot,
                                         met een minimum van 5 nabewerkte foto's in hoge resolutie.</p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="Bedrijfsportretten">
+                                <div role="tabpanel" class="tab-pane" id="Bedrijfsportretten" style="25 px">
                                     <h3 style="font-size: 25px;">Bedrijfsportretten</h3>
                                     <p>Bedrijfsportretten op locatie vanaf € 75,-.
                                         Een portret van al uw medewerkers (bijv. voor in uw brochure of op uw website)
@@ -246,7 +246,7 @@
     
     <div class="container">
         <div class="row">
-            <p class="text-xs-center">Copyright (c) 2016 BMMMT design</p>
+            <p class="text-xs-center">Copyright (c) 2016 MMMTB design</p>
         </div>
     </div>
 </footer>
@@ -256,19 +256,21 @@
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/SmoothScroll.js"></script>
-  <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
-  <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/jquery-mb-ytplayer/jquery.mb.YTPlayer.min.js"></script>
-  <script src="assets/masonry/masonry.pkgd.min.js"></script>
-  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/mobirise-slider-video/script.js"></script>
-  <script src="assets/mobirise-gallery/player.min.js"></script>
-  <script src="assets/mobirise-gallery/script.js"></script>
-  
+ <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
+            <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+             <script src="assets/jquery-mb-ytplayer/jquery.mb.YTPlayer.min.js"></script>
+           <script src="assets/masonry/masonry.pkgd.min.js"></script>
+             <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+             <script src="assets/dropdown/js/script.min.js"></script>
+             <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
+             <script src="assets/theme/js/script.js"></script>
+             <script src="assets/mobirise-slider-video/script.js"></script>
+             <script src="assets/mobirise-gallery/player.min.js"></script>
+             <script src="assets/mobirise-gallery/script.js"></script>
+
   
   <input name="animation" type="hidden">
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>
