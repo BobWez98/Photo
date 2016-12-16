@@ -14,7 +14,7 @@ include("./includes/header.php");
 <body>
 <div class="container">
   <div class="row" style="padding-top:90px;">
-     <form class="form-group" method="POST" action="upload.php">
+     <form class="form-group" method="POST" action="upload.php" enctype="multipart/form-data">
         <div class="col-md-6 col-md-offset-3">
             <h1>Upload een foto!</h1>
          <div class="well">
@@ -30,7 +30,7 @@ include("./includes/header.php");
 
             <div class="form-group" style="position: static;">
                 <label class="form-control-label" for="fileToUpload">Selecteer een foto:</label>
-                <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                <input class="form-control" type="file" name="fileToUpload" id="File">
                 <p class="help-block">Selecteer hier de foto die u wilt uploaden.</p>
             </div>
             <div class="form-group" style="padding-right: 20px; position: static;">
