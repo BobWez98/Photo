@@ -1,5 +1,5 @@
 <?php
-// controleren of het formulier is ingevuld
+// controleren of het formulier überhaupt is ingevuld
 if(!isset($_POST['submit']))
 {
     echo "error, u moet eerst het formulier invullen!";
