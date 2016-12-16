@@ -14,8 +14,9 @@ include("./includes/header.php");
 <body>
 <div class="container">
   <div class="row" style="padding-top:90px;">
+      <div class="col-md-12">
      <form class="form-group" method="POST" action="upload.php">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-8">
             <h1>Upload een foto!</h1>
          <div class="well">
             <div class="form-group" style="position: static;">
@@ -42,7 +43,7 @@ include("./includes/header.php");
      </form>
 
          <form class="form-group" method="POST" action="adminPaneel.php">
-             <div class="col-md-6 col-md-offset-3">
+             <div class="col-md-6 col-md-offset-8">
              <label for="onderwerpen">Selecteer</label>
              <select class="form-control" name="dir" id="onderwerpen">
                  <option>portretten</option>
@@ -51,18 +52,24 @@ include("./includes/header.php");
              </select>
                  <input class="form-group" type="submit" value="Inhoud map">
          </form>
+      </div>
+
       <form method="POST" action="fotoVerwijderen.php">
-                 <ul>
+
+          <ul class="list-group">
                  <?php
 
                  if(ISSET($_POST['dir'])){
                     $_SESSION['dir'] = $_POST['dir'];
-
+                    $dir1 = "assets/images/".$_SESSION['dir']."/";
                      $dir = scandir("assets/images/".$_POST['dir']);
 
                      foreach ($dir as $item){
 
-                         echo "<li class='list-group-item'><input class='form-group' name='verwijderen' value='$item' type='checkbox'>".$item."</li>";
+                         echo "<div id='".$dir1.$item."' style='display:none'><a class='list-group-item list-group-item-action' onmouseover=\"showPhoto('".$dir1.$item."')\" onmouseout=\"hidePhoto('".$dir1.$item."')\"><img src='".$dir1.$item."'>/a></div>
+                         <input class='form-group' name='verwijderen' value='$item' type='checkbox'>".$dir1.$item."</div></li>
+                        
+                         ";
 
                      }
 
@@ -76,10 +83,28 @@ include("./includes/header.php");
                     </ul>
           <input class="form-group" type="submit" value="Verwijder Foto">
       </form>
+      </div>
 
-     </div>
  </div>
 
+<script>
+
+    function showPhoto(item){
+        var e = document.getElementById(item);
+        e.style.display = 'block';
+
+    }
+
+    function hidePhoto(item){
+        var e = document.getElementById(item);
+        e.style.display = 'none';
+
+    }
+
+
+
+
+</script>
 
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
