@@ -117,8 +117,8 @@
             
             <div>
                 <ul class="nav nav-tabs" role="tablist" >
-                <li class="active" role="presentation"><a href="#huwelijken" aria-controls="home" role="tab" data-toggle="tab">Portretten</a></li>
-                <li role="presentation"><a href="#portretten" aria-controls="profile" role="tab" data-toggle="tab">Huwelijken</a></li>
+                <li class="active" role="presentation"><a class="btn btn-warning btn-xs" href="#huwelijken" aria-controls="home" role="tab" data-toggle="tab">Portretten</a></li>
+                <li role="presentation"><a class="btn btn-warning btn-xs" href="#portretten" aria-controls="profile" role="tab" data-toggle="tab">Huwelijken</a></li>
             </div>
             
             <div class="tab-content">
@@ -165,19 +165,19 @@
      <!-- EINDE GALLERIJ --> 
      <!-- TARIEVEN -->
     <section id="tarieven">
-           <div class="jumbotron">
-            <div class="container">
-                <h1 style="font-size: 60px"> TARIEVEN </h1> <br />
+           
+            <div class="container-fluid">
+                <h1> Tarieven </h1> <br />
                 <div>
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist" style="font-size: 15px">
-                        <li role="presentation" class="active"><a href="#Trouwreportages" aria-controls="home" role="tab" data-toggle="tab">Trouwreportages</a></li>
-                        <li role="presentation"><a href="#Portretfotografie" aria-controls="profile" role="tab" data-toggle="tab">Portretfotografie</a></li>
-                        <li role="presentation"><a href="#Familie" aria-controls="messages" role="tab" data-toggle="tab">Familie & gezin</a></li>
-                        <li role="presentation"><a href="#Zwanger" aria-controls="messages" role="tab" data-toggle="tab">Zwangerschapsshoots</a></li>
-                        <li role="presentation"><a href="#Bedrijfsportretten" aria-controls="settings" role="tab" data-toggle="tab">Bedrijfsportretten</a></li>
-                        <li role="presentation"><a href="#Let_op" aria-controls="settings" role="tab" data-toggle="tab">Let op!</a></li>
-                    </ul>
+                     <ul class="nav nav-tabs" role="tablist" >
+                            <li role="presentation" class="active"><a class="btn btn-warning" href="#Trouwreportages" aria-controls="home" role="tab" data-toggle="tab">Trouwreportages</a></li>
+                            <li role="presentation"><a class="btn btn-warning btn-xs" href="#Portretfotografie" aria-controls="profile" role="tab" data-toggle="tab">Portretfotografie</a></li>
+                            <li role="presentation"><a class="btn btn-warning btn-xs" href="#Familie" aria-controls="messages" role="tab" data-toggle="tab">Familie & gezin</a></li>
+                            <li role="presentation"><a class="btn btn-warning btn-xs" href="#Zwanger" aria-controls="messages" role="tab" data-toggle="tab">Zwangerschapsshoots</a></li>
+                            <li role="presentation"><a class="btn btn-warning btn-xs" href="#Bedrijfsportretten" aria-controls="settings" role="tab" data-toggle="tab">Bedrijfsportretten</a></li>
+                            <li role="presentation"><a class="btn btn-warning btn-xs" href="#Let_op" aria-controls="settings" role="tab" data-toggle="tab">Let op!</a></li>
+                        </ul>
 
             
             <br /> <br />
