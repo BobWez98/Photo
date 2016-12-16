@@ -14,4 +14,6 @@ unlink($dir.$verwijderen);
 var_dump($verwijderen);
 unset($_SESSION['dir']);
 
+header('Location: adminPaneel.php');
+
 ?>
