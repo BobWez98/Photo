@@ -2,7 +2,7 @@
 // controleren of het formulier überhaupt is ingevuld
 if(!isset($_POST['submit']))
 {
-    echo "error, u moet eerst het formulier invullen!";
+    echo "Error, u moet eerst het formulier invullen!";
 }
 $naam  = $_POST['naam'];
 $email  = $_POST['email'];
