@@ -112,7 +112,6 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <section id="gallery3-b">
                 <h1 class="page-header">Thumbnail Gallery</h1>
             </div>
             
@@ -162,7 +161,7 @@
     </div>
             <br />
             <br />
-        </section>
+        
      <!-- EINDE GALLERIJ --> 
      <!-- TARIEVEN -->
     <section id="tarieven">
