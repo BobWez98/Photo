@@ -15,6 +15,67 @@ include("./includes/header.php");
 <div class="container">
   <div class="row" style="padding-top:90px;">
       <div class="col-md-12">
+      <!--verwijderen foto vanaf hier-->
+
+      <form class="form-group" method="POST" action="adminPaneel.php">
+          <div class="col-md-6">
+              <label for="onderwerpen">Selecteer</label>
+              <select class="form-control" name="dir" id="onderwerpen">
+                  <option>portretten</option>
+                  <option>huwelijken</option>
+                  <option>natuur</option>
+              </select>
+              <input class="form-group" type="submit" value="Inhoud map">
+      </form>
+  </div>
+  </div>
+    <div class="row" style="padding-top:90px;">
+    <div class="col-md-6">
+    <form method="POST" action="fotoVerwijderen.php">
+
+        <ul class="list-group">
+            <?php
+
+            if(ISSET($_POST['dir'])){
+                $_SESSION['dir'] = $_POST['dir'];
+                $dir1 = "assets/images/".$_SESSION['dir']."/";
+                $dir = scandir("assets/images/".$_POST['dir']);
+                echo "<div class='col-md-3' style='overflow: scroll; width:400px; height:600px;'>";
+                foreach (array_slice($dir, 2) as $item){
+
+                    echo "
+                         <li class='list-group-item list-group-item-action' onmouseover=\"showPhoto('".$dir1.$item."')\" onmouseout=\"hidePhoto('".$dir1.$item."')\">
+                         
+                         <input class='form-group' name='verwijderen' value='$item' type='checkbox'>
+                         ".$dir1.$item."
+                        
+                          <div id='".$dir1.$item."' style='display:none'>
+                         <img style='width:25%;' class='img-responsive' src='".$dir1.$item."'></div>
+                        </li>
+                         
+                         
+                         ";
+
+                }
+
+
+
+
+            }
+
+
+            ?>
+        </ul>
+        <input class="form-group" type="submit" value="Verwijder Foto">
+    </form>
+</div>
+
+
+
+
+
+      <!--uploaden foto vanaf hier -->
+      <div class="col-md-12">
      <form class="form-group" method="POST" action="upload.php">
         <div class="col-md-6 col-md-offset-8">
             <h1>Upload een foto!</h1>
@@ -42,50 +103,9 @@ include("./includes/header.php");
     </div>
      </form>
 
-         <form class="form-group" method="POST" action="adminPaneel.php">
-             <div class="col-md-6 col-md-offset-8">
-             <label for="onderwerpen">Selecteer</label>
-             <select class="form-control" name="dir" id="onderwerpen">
-                 <option>portretten</option>
-                 <option>huwelijken</option>
-                 <option>natuur</option>
-             </select>
-                 <input class="form-group" type="submit" value="Inhoud map">
-         </form>
+
       </div>
-
-      <form method="POST" action="fotoVerwijderen.php">
-
-          <ul class="list-group">
-                 <?php
-
-                 if(ISSET($_POST['dir'])){
-                    $_SESSION['dir'] = $_POST['dir'];
-                    $dir1 = "assets/images/".$_SESSION['dir']."/";
-                     $dir = scandir("assets/images/".$_POST['dir']);
-
-                     foreach ($dir as $item){
-
-                         echo "<div id='".$dir1.$item."' style='display:none'><a class='list-group-item list-group-item-action' onmouseover=\"showPhoto('".$dir1.$item."')\" onmouseout=\"hidePhoto('".$dir1.$item."')\"><img src='".$dir1.$item."'>/a></div>
-                         <input class='form-group' name='verwijderen' value='$item' type='checkbox'>".$dir1.$item."</div></li>
-                        
-                         ";
-
-                     }
-
-
-
-
-                 }
-
-
-                 ?>
-                    </ul>
-          <input class="form-group" type="submit" value="Verwijder Foto">
-      </form>
-      </div>
-
- </div>
+</div>
 
 <script>
 
