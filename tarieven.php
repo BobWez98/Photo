@@ -16,31 +16,31 @@
                 <div role="tabpanel" class="tab-pane" id="Trouwreportages">
                     <h3>Trouwreportages</h3>
                     <p>Informeer vrijblijvend naar onze voordelige tarieven voor het
-                    maken van een trouwreportage. Wij geven jullie graag advies over de
+                    maken van een trouwreportage. Wij geven u graag advies over de
                     diverse mogelijkheden.</p>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="Portretfotografie">
                     <h3>Portretfotografie</h3>
                     <p>In de studio of op locatie 1-5 personen:
-                    Met 1-5 personen € 75,- ca 1 uur fotografie,
-                    minimaal 5 nabewerkte foto’s (groeps- en singlefoto’s) in hoge
+                    Met 1-5 personen ï¿½ 75,- ca 1 uur fotografie,
+                    minimaal 5 nabewerkte fotoï¿½s (groeps- en singlefotoï¿½s) in hoge
                     resolutie.</p>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="Familie">
                     <h3>Familie en Gezin</h3>
-                    Ouders, kinderen en opa & oma € 85,- ca 1 uur fotografie,
-                    minimaal 5 nabewerkte foto’s (groeps- en singlefoto’s) in hoge resolutie.
+                    Ouders, kinderen en opa & oma ï¿½ 85,- ca 1 uur fotografie,
+                    minimaal 5 nabewerkte fotoï¿½s (groeps- en singlefotoï¿½s) in hoge resolutie.
                 </div>
                 <div role="tabpanel" class="tab-pane" id="Zwanger">
                     <h3>Zwangerschapsshoots</h3>
-                    <p>€ 85,- per uur het aantal foto's is afhankelijk van de duur van de shoot,
+                    <p>ï¿½ 85,- per uur het aantal foto's is afhankelijk van de duur van de shoot,
                         met een minimum van 5 nabewerkte foto's in hoge resolutie.</p>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="Bedrijfsportretten">
                     <h3>Bedrijfsportretten</h3>
-                    <p>Bedrijfsportretten op locatie vanaf € 75,-.
+                    <p>Bedrijfsportretten op locatie vanaf ï¿½ 75,-.
                         Een portret van al uw medewerkers (bijv. voor in uw brochure of op uw website)
-                        tot 10 medewerkers voor € 225,-.
+                        tot 10 medewerkers voor ï¿½ 225,-.
 
                         - De foto's worden geleverd in hoge resolutie op usb-stick</p>
 
@@ -49,12 +49,12 @@
                     <h3>Let op!</h3>
                     <p>Alle genoemde bedragen zijn exclusief 21% BTW.
 
-                        Afdrukken van foto’s De foto’s kunnen, tegen meerprijs en in verschillende formaten, via de website van Mambofotografie worden besteld.
-                        Als je geen afdruk(ken) wilt, kun je voor de download-optie kiezen of voor een usb-stick tegen meerprijs.
+                        Afdrukken van fotoï¿½s kunnen, tegen meerprijs en in verschillende formaten, via de website van Mambofotografie worden besteld.
+                        Als u geen afdruk(ken) wilt, kun je voor de download-optie kiezen of voor een usb-stick tegen meerprijs.
 
                         - Alle prijzen genoemd bij de bestel/afdruk service zijn inclusief 21% BTW.
 
-                        - Reiskosten buiten een straal van 25 km van Den Helder bedragen € 0,39/km.
+                        - Reiskosten buiten een straal van 25 km van Den Helder bedragen ï¿½ 0,39/km.
 
                         - Opdrachten dienen vooraf per overschrijving a 50% te worden voldaan.
 

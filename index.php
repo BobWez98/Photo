@@ -13,7 +13,11 @@
                         <div class="mbr-table-cell">
                           <div class="mbr-overlay" style="opacity: 0.6;"></div>
                             <div class="container-slide">
+<<<<<<< HEAD
                               <img src="https://placehold.it/1600x800">
+=======
+                                <img src="assets\images\foto_1.jpg">
+>>>>>>> d96cb12823eb18109c9048defeebba60f9522797
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2 text-xs-center">
                                       <h2 class="mbr-section-title display-1">Mambo Fotografie</h2>
@@ -31,7 +35,11 @@
                         <div class="mbr-table-cell">
                           <div class="mbr-overlay"></div>
                             <div class="container-slide">
+<<<<<<< HEAD
                               <img src="https://placehold.it/1600x800">
+=======
+                                <img src="assets\images\bridge55.jpg">
+>>>>>>> d96cb12823eb18109c9048defeebba60f9522797
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-1">
                                         <h2 class="mbr-section-title display-1"></h2>
@@ -39,12 +47,20 @@
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
                     </div>
                     <div class="mbr-section mbr-section-hero carousel-item dark center" data-bg-video-slide="false">
                       <div class="mbr-table-cell">
                         <div class="mbr-overlay"></div>
                           <div class="container-slide">
                             <img src="https://placehold.it/1600x800">
+=======
+                    </div><div class="mbr-section mbr-section-hero carousel-item dark center" data-bg-video-slide="false">
+                        <div class="mbr-table-cell">
+                            <div class="mbr-overlay"></div>
+                            <div class="container-slide">
+                                <img src="assets/images/foto_3.jpg">
+>>>>>>> d96cb12823eb18109c9048defeebba60f9522797
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-3 text-xs-right">
                                         <h2 class="mbr-section-title display-1"></h2>
@@ -114,15 +130,15 @@
                 <h1 class="page-header">Thumbnail Gallery</h1>
             </div>
             
-<!-- oud niet meer nodig
-<div>
+            <div>
                 <ul class="nav nav-tabs" role="tablist" >
                 <li class="active" role="presentation"><a class="btn btn-warning btn-xs" href="#huwelijken" aria-controls="home" role="tab" data-toggle="tab">Portretten</a></li>
                 <li role="presentation"><a class="btn btn-warning btn-xs" href="#portretten" aria-controls="profile" role="tab" data-toggle="tab">Huwelijken</a></li>
-            </div>-->
+            </div>
             
             <div class="tab-content">
                 
+<<<<<<< HEAD
              <?php
 
                 $scan = scandir("./assets/images");
@@ -166,12 +182,15 @@
                 </div>-->
                <!-- <div role="tabpanel" class="tab-pane" id="portretten">
                     <?php /*
+=======
+                <div role="tabpanel" class="tab-pane" id="huwelijken">
+                    <?php 
                         // Ben een heel eind gekomen met de gallerij, moet alleen nog even kijken of ik wat minder whitespace ertussen kan krijgen en de eerste 2 afbeeldingen kan fixen.
-                        $dir = "assets/images/portretten/";
+                        $dir = "assets/images/Huwelijken/";
                         $exclude = array( ".","..","error_log","_notes" );
                         if (is_dir($dir)) {
                         $files = scandir($dir);
-                        foreach(array_slice($files, 2) as $file){
+                        foreach($files as $file){
                         if(!in_array($files,$exclude)){
                                 echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
                                         <img  style="width:100%; " class="img-responsive" src="'.$dir.$file.'">
@@ -179,9 +198,27 @@
                                 } 
                             }
                         }
-                    */?>
+                    ?>
                 </div>
-        </div>-->
+                <div role="tabpanel" class="tab-pane" id="portretten">
+                    <?php 
+>>>>>>> d96cb12823eb18109c9048defeebba60f9522797
+                        // Ben een heel eind gekomen met de gallerij, moet alleen nog even kijken of ik wat minder whitespace ertussen kan krijgen en de eerste 2 afbeeldingen kan fixen.
+                        $dir = "assets/images/portretten/";
+                        $exclude = array( ".","..","error_log","_notes" );
+                        if (is_dir($dir)) {
+                        $files = scandir($dir);
+                        foreach($files as $file){
+                        if(!in_array($files,$exclude)){
+                                echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <img  style="width:100%; " class="img-responsive" src="'.$dir.$file.'">
+                                    </div>'; 
+                                } 
+                            }
+                        }
+                    ?>
+                </div>
+        </div>
     </div>
             
             <br />
