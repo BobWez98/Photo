@@ -22,10 +22,17 @@ include("./includes/header.php");
           <div class="well">
               <label for="onderwerpen">Selecteer</label>
               <select class="form-control" name="dir" id="onderwerpen">
-                  <option>portretten</option>
-                  <option>huwelijken</option>
-                  <option>natuur</option>
+                  <?php
+                  $scan = scandir("./assets/images");
+
+                  foreach (array_slice($scan, 2) as $option){
+                      echo "<option>". $option ."</option>";
+                  }
+
+                   ?>
+
               </select>
+
               <input class="form-control" type="submit" value="Inhoud map">
       </form>
 
@@ -61,12 +68,14 @@ include("./includes/header.php");
 
 
             }
-
-
+echo "</ul>";
+            if(ISSET($_POST['dir'])) {
+                echo "<input class='form-control' type='submit' value='Verwijder Foto'>";
+            }
             ?>
 
-        </ul>
-        <input class='form-control' type='submit' value='Verwijder Foto'>
+
+
   </div>
     </form>
 
@@ -84,9 +93,14 @@ include("./includes/header.php");
             <div class="form-group" style="position: static;">
                 <label for="onderwerpen">Selecteer</label>
                 <select class="form-control" name="dir" id="onderwerpen">
-                    <option>portretten</option>
-                    <option>huwelijken</option>
-                    <option>natuur</option>
+                    <?php
+                    $scan1 = scandir("./assets/images");
+
+                    foreach (array_slice($scan1, 2) as $option1){
+                        echo "<option>". $option1 ."</option>";
+                    }
+
+                    ?>
                 </select>
                 <p class="help-block">Selecteer hier de categorie waar de foto bij hoort.</p>
             </div>
@@ -112,6 +126,7 @@ include("./includes/header.php");
                <div class="form-group">
                    <label for="album">Type hier de naam van het nieuwe album:</label>
                    <input class="form-control" type="text" name="album">
+                    <br>
                    <input class="form-control" type="submit" value="Maak album" name="submit">
 
                </div>
