@@ -105,9 +105,9 @@
     <br />
     <!-- HIER EINDIGT HET STUKJE 'OVER'-->
     <!-- HIER START DE GALLERIJ --> 
-    
+     
     <div class="gallery" >
-    
+   
         <div class="container">
 
         <div class="row">
@@ -187,9 +187,11 @@ var_dump($dir);
                 </div>
         </div>-->
     </div>
+            
             <br />
             <br />
-        
+           
+           
      <!-- EINDE GALLERIJ --> 
      <!-- TARIEVEN -->
      <section id="tarieven">
@@ -200,7 +202,7 @@ var_dump($dir);
                     <!-- Nav tabs -->
                     
                         <ul class="nav nav-tabs" role="tablist" >
-                            <li role="presentation" class="active"><a class="btn btn-warning" href="#Trouwreportages" aria-controls="home" role="tab" data-toggle="tab">Trouwreportages</a></li>
+                            <li role="presentation" ><a class="btn btn-warning" href="#Trouwreportages" aria-controls="home" role="tab" data-toggle="tab">Trouwreportages</a></li>
                             <li role="presentation"><a class="btn btn-warning btn-xs" href="#Portretfotografie" aria-controls="profile" role="tab" data-toggle="tab">Portretfotografie</a></li>
                             <li role="presentation"><a class="btn btn-warning btn-xs" href="#Familie" aria-controls="messages" role="tab" data-toggle="tab">Familie & gezin</a></li>
                             <li role="presentation"><a class="btn btn-warning btn-xs" href="#Zwanger" aria-controls="messages" role="tab" data-toggle="tab">Zwangerschapsshoots</a></li>
@@ -212,7 +214,7 @@ var_dump($dir);
             <br /> <br />
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane" id="Trouwreportages" style="25 px">
-                                    <h3>Trouwreportages</h3>
+                                    <h3 style="font-size: 25px;">Trouwreportages</h3>
                                     <p>Informeer vrijblijvend naar onze voordelige tarieven voor het
                                     maken van een trouwreportage.<br /> Wij geven jullie graag advies over de
                                     diverse mogelijkheden.</p>
