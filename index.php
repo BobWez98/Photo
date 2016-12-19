@@ -11,39 +11,40 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="mbr-section mbr-section-hero carousel-item dark center active" data-bg-video-slide="false">
                         <div class="mbr-table-cell">
-                            <div class="mbr-overlay" style="opacity: 0.6;"></div>
+                          <div class="mbr-overlay" style="opacity: 0.6;"></div>
                             <div class="container-slide">
-                                <img src="https://placehold.it/1600x800">
+                              <img src="https://placehold.it/1600x800">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2 text-xs-center">
-                                        <h2 class="mbr-section-title display-1">Mambo Fotografie</h2>
-                                        <p class="mbr-section-lead lead"><i>"Als het klikt, maak ik de foto"</i></p>
-
-                                        <div class="mbr-section-btn"><a class="btn btn-lg btn-warning" href="#Section-Gallerij">Gallerij</a> <a class="btn btn-lg btn-warning" href="Login.php">Login</a> </div>
+                                      <h2 class="mbr-section-title display-1">Mambo Fotografie</h2>
+                                      <p class="mbr-section-lead lead"><i>"Als het klikt, maak ik de foto"</i></p>
+                                        <div class="mbr-section-btn">
+                                            <a class="btn btn-lg btn-warning" href="#Section-Gallerij">Gallerij</a>
+                                            <a class="btn btn-lg btn-warning" href="Login.php">Login</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><div class="mbr-section mbr-section-hero carousel-item dark center" data-bg-video-slide="false">
+                    </div>
+                      <div class="mbr-section mbr-section-hero carousel-item dark center" data-bg-video-slide="false">
                         <div class="mbr-table-cell">
-                            <div class="mbr-overlay"></div>
+                          <div class="mbr-overlay"></div>
                             <div class="container-slide">
-                                <img src="https://placehold.it/1600x800">
+                              <img src="https://placehold.it/1600x800">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-1">
                                         <h2 class="mbr-section-title display-1"></h2>
-                                        
-
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><div class="mbr-section mbr-section-hero carousel-item dark center" data-bg-video-slide="false">
-                        <div class="mbr-table-cell">
-                            <div class="mbr-overlay"></div>
-                            <div class="container-slide">
-                                <img src="https://placehold.it/1600x800">
+                    </div>
+                    <div class="mbr-section mbr-section-hero carousel-item dark center" data-bg-video-slide="false">
+                      <div class="mbr-table-cell">
+                        <div class="mbr-overlay"></div>
+                          <div class="container-slide">
+                            <img src="https://placehold.it/1600x800">
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-3 text-xs-right">
                                         <h2 class="mbr-section-title display-1"></h2>
@@ -107,9 +108,7 @@
     <!-- HIER START DE GALLERIJ --> 
      
     <div class="gallery" >
-   
         <div class="container">
-
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Thumbnail Gallery</h1>
@@ -128,45 +127,42 @@
 
                 $scan = scandir("./assets/images");
                 echo"<div><ul class='nav nav-tabs' role='tablist'>";
+                
                 foreach(array_slice($scan, 2) as $dir){
-
-
                     echo"<li role='presentation'><a class='btn btn-warning btn-xs' href='#". $dir ."' aria-controls='profile' role='tab' data-toggle='tab'>". $dir ."</a></li>";
                     echo"<div role='tabpanel' class='tab-pane' id=" . $dir . ">";
                     var_dump($dir);
-
-
                 }
-             $pathPics = "./assets/images/". $dir;
-             $pics = scandir($pathPics);
+                 $pathPics = "./assets/images/". $dir;
+                 $pics = scandir($pathPics);
 
-             foreach(array_slice($pics, 2) as $item) {
+                 foreach(array_slice($pics, 2) as $item) {
 
-                 echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>";
-                 echo "<img class='img-responsive' src='". $pathPics."/" .$item ."'></div>";
-             }
+                     echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>";
+                     echo "<img class='img-responsive' src='". $pathPics."/" .$item ."'></div>";
+                 }
 
-            echo"</div></div>";
+                echo"</div></div>";
 
-           /*  if(ISSET($dir)) {
+               /*  if(ISSET($dir)) {
 
-                 echo "<div role='tabpanel' class='tab-pane' id=" . $dir . ">";
+                     echo "<div role='tabpanel' class='tab-pane' id=" . $dir . ">";
 
-                 // Ben een heel eind gekomen met de gallerij, moet alleen nog even kijken of ik wat minder whitespace ertussen kan krijgen en de eerste 2 afbeeldingen kan fixen.
+                     // Ben een heel eind gekomen met de gallerij, moet alleen nog even kijken of ik wat minder whitespace ertussen kan krijgen en de eerste 2 afbeeldingen kan fixen.
 
-var_dump($dir);
+    var_dump($dir);
 
-                     $files = scandir($dir);
-                     foreach (array_slice($files, 2) as $file) {
+                         $files = scandir($dir);
+                         foreach (array_slice($files, 2) as $file) {
 
-                             echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                                        <img  style="width:100%; " class="img-responsive" src="' . $dir . $file . '">
-                                    </div>';
+                                 echo '<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                            <img  style="width:100%; " class="img-responsive" src="' . $dir . $file . '">
+                                        </div>';
 
-                     }
+                         }
 
-             }
-                    */?><!--
+                 }
+                        */?><!--
                 </div>-->
                <!-- <div role="tabpanel" class="tab-pane" id="portretten">
                     <?php /*
