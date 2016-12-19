@@ -26,12 +26,10 @@ include("./includes/header.php");
                   <option>huwelijken</option>
                   <option>natuur</option>
               </select>
-              <input class="form-group" type="submit" value="Inhoud map">
+              <input class="form-control" type="submit" value="Inhoud map">
       </form>
 
 
-<!--    <div class="row" style="padding-top:90px;">-->
-<!--    <div class="col-md-6">-->
     <form class="form-group" method="POST" action="fotoVerwijderen.php">
 
         <ul class="list-group">
@@ -41,7 +39,7 @@ include("./includes/header.php");
                 $_SESSION['dir'] = $_POST['dir'];
                 $dir1 = "assets/images/".$_SESSION['dir']."/";
                 $dir = scandir("assets/images/".$_POST['dir']);
-                echo "<div class='' style='overflow: scroll; width:400px; height:600px;'>";
+                echo "<div class='form-control' style='overflow: scroll; height: 500px;'>";
                 foreach (array_slice($dir, 2) as $item){
 
                     echo "
@@ -68,7 +66,7 @@ include("./includes/header.php");
             ?>
 
         </ul>
-        <input class='form-group' type='submit' value='Verwijder Foto'>
+        <input class='form-control' type='submit' value='Verwijder Foto'>
   </div>
     </form>
 
@@ -78,9 +76,9 @@ include("./includes/header.php");
 
 
       <!--uploaden foto vanaf hier -->
-<!--      <div class="col-md-12">-->
+
      <form class="form-group" method="POST" action="upload.php" enctype="multipart/form-data">
-<!--        <div class="col-md-6">-->
+
             <h1>Upload een foto!</h1>
          <div class="well">
             <div class="form-group" style="position: static;">
@@ -105,6 +103,25 @@ include("./includes/header.php");
         </div>
 
      </form>
+
+<!--Map/album toevoegen-->
+
+      <form class="form-group" method="POST" action="mapMaken.php">
+          <h1>Maak een nieuw album!</h1>
+           <div class="well">
+               <div class="form-group">
+                   <label for="album">Type hier de naam van het nieuwe album:</label>
+                   <input class="form-control" type="text" name="album">
+                   <input class="form-control" type="submit" value="Maak album" name="submit">
+
+               </div>
+           </div>
+
+
+      </form>
+
+
+
 </div>
 </div>
 <script>
