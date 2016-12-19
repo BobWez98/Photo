@@ -34,8 +34,8 @@
                 <div class="mbr-table-cell">
 
                     <div class="navbar-brand">
-                        <a href="https://google.com" class="mbri-camera mbr-iconfont mbr-iconfont-menu navbar-logo"></a>
-                        <a class="navbar-caption" href="https://google.com">Mambo Fotografie</a>
+                        <a href="index.php" class="mbri-camera mbr-iconfont mbr-iconfont-menu navbar-logo"></a>
+                        <a class="navbar-caption" href="index.php">Mambo Fotografie</a>
                     </div>
 
                 </div>
@@ -45,7 +45,7 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="https://mambofotografie.nl">HOME</a></li><li class="nav-item"><a class="nav-link link" href="https://google.com/">GALLARIJ</a></li><li class="nav-item"><a class="nav-link link" href="https://google.com/over.php">OVER</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="https://mambofotografie.nl/login.php">LOGIN</a></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="https://mambofotografie.nl">HOME</a></li><li class="nav-item"><a class="nav-link link" href="index.php">GALLARIJ</a></li><li class="nav-item"><a class="nav-link link" href="https://google.com/over.php">OVER</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="https://mambofotografie.nl/login.php">LOGIN</a></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -58,7 +58,7 @@
 
 </section>
 
-<section class="engine"><a rel="external" href="https://google.com">free web site building</a></section><section class="mbr-section mbr-after-navbar" id="form1-l" style="background-color: rgb(255, 255, 255); padding-top: 160px; padding-bottom: 160px;">
+<section class="engine"><a rel="external" href="index.php">free web site building</a></section><section class="mbr-section mbr-after-navbar" id="form1-l" style="background-color: rgb(255, 255, 255); padding-top: 160px; padding-bottom: 160px;">
     
     <div class="mbr-section mbr-section__container mbr-section__container--middle">
         <div class="container">
