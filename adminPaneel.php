@@ -12,13 +12,14 @@ include("./includes/header.php");
 
 
 <body>
-<div class="container">
+<div class="container-fluid">
   <div class="row" style="padding-top:90px;">
-      <div class="col-md-12">
+      <div class="col-md-6 col-md-offset-3">
       <!--verwijderen foto vanaf hier-->
 
       <form class="form-group" method="POST" action="adminPaneel.php">
-          <div class="col-md-6">
+          <h1>Verwijder een foto!</h1>
+          <div class="well">
               <label for="onderwerpen">Selecteer</label>
               <select class="form-control" name="dir" id="onderwerpen">
                   <option>portretten</option>
@@ -27,11 +28,11 @@ include("./includes/header.php");
               </select>
               <input class="form-group" type="submit" value="Inhoud map">
       </form>
-  </div>
-  </div>
-    <div class="row" style="padding-top:90px;">
-    <div class="col-md-6">
-    <form method="POST" action="fotoVerwijderen.php">
+
+
+<!--    <div class="row" style="padding-top:90px;">-->
+<!--    <div class="col-md-6">-->
+    <form class="form-group" method="POST" action="fotoVerwijderen.php">
 
         <ul class="list-group">
             <?php
@@ -40,7 +41,7 @@ include("./includes/header.php");
                 $_SESSION['dir'] = $_POST['dir'];
                 $dir1 = "assets/images/".$_SESSION['dir']."/";
                 $dir = scandir("assets/images/".$_POST['dir']);
-                echo "<div class='col-md-3' style='overflow: scroll; width:400px; height:600px;'>";
+                echo "<div class='' style='overflow: scroll; width:400px; height:600px;'>";
                 foreach (array_slice($dir, 2) as $item){
 
                     echo "
@@ -65,19 +66,21 @@ include("./includes/header.php");
 
 
             ?>
+
         </ul>
-        <input class="form-group" type="submit" value="Verwijder Foto">
+        <input class='form-group' type='submit' value='Verwijder Foto'>
+  </div>
     </form>
-</div>
+
 
 
 
 
 
       <!--uploaden foto vanaf hier -->
-      <div class="col-md-12">
-     <form class="form-group" method="POST" action="upload.php">
-        <div class="col-md-6 col-md-offset-8">
+<!--      <div class="col-md-12">-->
+     <form class="form-group" method="POST" action="upload.php" enctype="multipart/form-data">
+<!--        <div class="col-md-6">-->
             <h1>Upload een foto!</h1>
          <div class="well">
             <div class="form-group" style="position: static;">
@@ -100,13 +103,10 @@ include("./includes/header.php");
                 <input class="form-control" type="submit" value="Upload Image" name="submit">
             </div>
         </div>
-    </div>
+
      </form>
-
-
-      </div>
 </div>
-
+</div>
 <script>
 
     function showPhoto(item){
