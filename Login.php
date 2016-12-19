@@ -45,7 +45,7 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li><li class="nav-item"><a class="nav-link link" href="index.php">GALLERIJ</a></li><li class="nav-item"><a class="nav-link link" href="https://google.com/over.php"Fcon>OVER</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="https://mambofotografie.nl/login.php">LOGIN</a></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.php">HOME</a></li><li class="nav-item"><a class="nav-link link" href="index.php">GALLERIJ</a></li><li class="nav-item"><a class="nav-link link" href="index.php#over"Fcon>OVER</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="login.php">LOGIN</a></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
