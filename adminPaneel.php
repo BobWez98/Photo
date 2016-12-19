@@ -135,7 +135,31 @@ echo "</ul>";
 
       </form>
 
+      <!--map/album verwijderen-->
 
+      <form class="form-group" method="POST" action="mapVerwijderen.php">
+          <h1>Verwijder een album!</h1>
+          <div class="well">
+              <div class="form-group">
+                  <label for="albumVerwijder">Selecteer het album die verwijderd moet worden</label>
+                  <select class="form-control" name="albumVerwijder">
+                      <?php
+                      $dir2 = scandir("./assets/images");
+
+                      foreach(array_slice($dir2, 2) as $album){
+                          echo"<option>". $album ."</option>";
+                      }
+
+
+                      ?>
+
+                  </select>
+
+                  <input class="form-control" type="submit" value="verwijder album">
+              </div>
+          </div>
+
+      </form>
 
 </div>
 </div>
